@@ -1,4 +1,4 @@
-public class Empleado extends Persona
+public class Empleado <T> extends Persona
 {
     private String puestoLaboral;
     public Empleado(String nombre, int edad, String puestoLaboral) {

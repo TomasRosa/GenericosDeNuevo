@@ -51,9 +51,9 @@ public class ListaGenerica <T>
         }
     }
     ///8.
-    public <T extends Empleado> void imprimirElementos (List<T> lista) ///Preguntar
+    public void imprimirElementos (List<? super Empleado<T>> lista) ///Preguntar
     {
-        for(T elemento: lista)
+        for(Object elemento: lista)
         {
             System.out.println(elemento);
         }
